@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYPHER - Elegant Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1 class="logo">ZYPHER</h1>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="headline">"Refined Learning, Elevated Thinking."</h1>
+            <p class="subtext">Curated courses for a seamless and impactful learning experience.</p>
+            <a href="#courses" class="btn scroll-btn">Start Journey</a>
+        </div>
+    </section>
+
+    <!-- Courses Section (One-by-One Layout, Half Screen Size) -->
+    <section id="courses" class="courses">
+        <h2 class="section-title">Explore Our Courses</h2>
+        <div class="course-list">
+            <div class="course-box" onclick="showPopup('Trading', 'https://whatsapp.com/channel/0029Vb6CcBw8KMqkFmoq5J3c')">
+                <h3>Trading</h3>
+                <p>Market Strategies</p>
+                <p>Risk Management</p>
+                <button class="btn">DETAILS</button>
+            </div>
+            <div class="course-box" onclick="showPopup('Web Development', 'https://whatsapp.com/channel/0029Vb615mjAjPXLP9k1xM47')">
+                <h3>Web Development</h3>
+                <p>Responsive Design</p>
+                <button class="btn">DETAILS</button>
+            </div>
+            <div class="course-box" onclick="showPopup('Digital Marketing', 'https://whatsapp.com/channel/0029Vb6f1nKCXC3GOKqLY23o')">
+                <h3>Digital Marketing</h3>
+                <p>SEO & Advertising</p>
+                <p>Social Media Growth</p>
+                <button class="btn">DETAILS</button>
+            </div>
+            <div class="course-box" onclick="showPopup('English', 'https://whatsapp.com/channel/0029Vb1A2nTGZNCwjDVT1f15')">
+                <h3>English</h3>
+                <p>Fluent Speaking</p>
+                <p>Strong Writing</p>
+                <button class="btn">DETAILS</button>
+            </div>
+            <div class="course-box" onclick="showPopup('Hacking', 'https://whatsapp.com/channel/0029Vb6TYss2v1Ik6H9DcK41')">
+                <h3>Hacking</h3>
+                <p>Cybersecurity</p>
+                <p>Penetration Testing</p>
+                <button class="btn">DETAILS</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-up Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p>✔ Online Class</p>
+            <p>✔ Premium Mentors</p>
+            <p>✔ Trusted</p>
+            <p>✔ 24/7 Customer Care</p>
+            <h3 class="highlight">Fee: ₹4999/-</h3>
+            <button id="join-btn" class="btn pulse">Join Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
